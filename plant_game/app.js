@@ -108,6 +108,7 @@ const compare = () => {
         } else {
             window.alert(`Oof! Sun-Lamp on a sunny day is too much for your plant's lil leaves. Careful not to burn it up!`);
             plant.health-=2;
+            water.level-=1;
             plant.day++;
             showStatus();
         }
