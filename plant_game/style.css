@@ -1,9 +1,138 @@
-/*
+/* @media screen (min-width: 100px) { */
 
--start game button
+    body {
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 
--display all player choices with corresponding buttons
+    #main-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
--text box?
+    h1 {
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+    
+    #plant1 > img {
+        width: 35%;
+        height: auto;
+        margin: 0 0 15px 330px;
+        border-radius: 20%;
+    }
 
+    #begin {
+        margin: 15px 0 15px 0;
+        width: 200pxlol;
+    }
+
+    #output-box {
+        text-align: center;
+        color: white;
+        height: 125px;
+        width: 400px;
+        margin: 10px 0 0 0;
+        background-color: black;
+    }
+
+    #choices {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 50px 25px 50px;
+    }
+
+    #water > img {
+        width: 170px;
+        height: auto;
+        border-radius: 20%;
+    }
+
+    #waterBtn {
+        margin-left: 54px;
+    }
+
+    #shelter > img {
+        width: 170px;
+        height: auto;
+        border-radius: 20%;
+    }
+
+    #shelterBtn {
+        margin-left: 52px;
+    }
+    
+    #lamp > img {
+        width: 170px;
+        height: auto;
+        border-radius: 20%;
+    }
+
+    #lampBtn {
+        margin-left: 44px;
+    }
+
+    #doNothing > img {
+        width: 170px;
+        height: auto;
+        border-radius: 20%;
+    }
+
+    #nothingBtn {
+        margin-left: 40px;
+    }
+
+    #bail > img {
+        width: 170px;
+        height: auto;
+        border-radius: 20%;
+    }
+
+    #bailBtn {
+        margin-left: 60px;
+    }
+
+
+
+
+/* #main-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+#plant1 > img {
+    width: 50%;
+    height: 50%;
+    margin-left: 90px; 
+}
+
+#begin {
+    margin: 10px 0 10px 0;;
+}
+
+#output-box > img {
+    height: 100px;
+    width: 300px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: row;
+}
+
+#choices > img {
+    width: 10%;
+    height: auto;
+}
  */
