@@ -1,11 +1,11 @@
 /* @media screen (min-width: 100px) { */
 
     body {
-        background-image: url(background.jpg);
-        background-size: cover;
+        background-image: url(imgs/newbg.jpg);
+        background-size: 100% 127%;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        background-position: center;
+        
     }
 
     #main-box {
@@ -22,10 +22,12 @@
     }
     
     #plant1 > img {
-        width: 27%;
+        display: flex;
+        width: 20%;
         height: auto;
-        margin: 0 0 0 363px;
+        /* margin: 0 0 0 363px; */
         border-radius: 20%;
+        margin: auto;
     }
 
     #begin {
@@ -35,13 +37,13 @@
 
     #output-box {
         font-family: 'Amatic SC', cursive;
-        font-size: 20px;
+        font-size: 30px;
         font-style: bold;
         text-align: center;
         color: white;
         height: 125px;
         width: 800px;
-        margin: 0 0 0 0;
+        margin: 0 0 25px 0;
         background-color: rgba(0, 255, 0, 0.3)
         
         
@@ -49,20 +51,29 @@
 
     #choices {
         display: flex;
+        margin: 20px 50px 10px 50px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    #buttons {
+        display: flex;
         flex-direction: row;
-        margin: 30px 50px 25px 50px;
+        justify-content: space-evenly;
+        margin: 0 15px 0 15px;
     }
 
     #water > img {
         width: 170px;
         height: auto;
         border-radius: 30%;
-        border: black;
+        
     }
 
-    #waterBtn {
-        margin-left: 54px;
-    }
+    /* #waterBtn {
+        margin-right: 20px;
+    } */
 
     #shelter > img {
         width: 170px;
@@ -70,9 +81,9 @@
         border-radius: 20%;
     }
 
-    #shelterBtn {
-        margin-left: 52px;
-    }
+    /* #shelterBtn {
+        margin-right: 15px;
+    } */
     
     #lamp > img {
         width: 170px;
@@ -80,9 +91,9 @@
         border-radius: 20%;
     }
 
-    #lampBtn {
-        margin-left: 44px;
-    }
+    /* #lampBtn {
+        margin-right: 15px;
+    } */
 
     #doNothing > img {
         width: 170px;
@@ -90,9 +101,9 @@
         border-radius: 20%;
     }
 
-    #nothingBtn {
+    /* #nothingBtn {
         margin-left: 40px;
-    }
+    } */
 
     #bail > img {
         width: 170px;
@@ -100,12 +111,17 @@
         border-radius: 20%;
     }
 
-    #bailBtn {
+    /* #bailBtn {
         margin-left: 60px;
+    } */
+
+    #health-water {
+        margin
     }
 
     .healthwater {
         font-family: 'Amatic SC', cursive;
+        
     }
 
 

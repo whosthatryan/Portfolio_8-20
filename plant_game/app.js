@@ -36,6 +36,10 @@ const healthWater = () => {
 
     }
 
+const chooseBelow = () => {
+    $('.output').text(`What would you like to do? Choose below!`)
+}
+
 const $p0w0 = () => {
     $('.output').text(`You just watered your plant but it also rained. Careful not to over-water!`)
 }
@@ -103,6 +107,7 @@ const $p3w3 = () => {
 const begin = () => {
     const decision = window.prompt("Look at that handsome, new plant you just got. Ready to try and not kill it? Yes or No.")
     if (decision.toLowerCase().trim() === 'yes') {
+        chooseBelow();
     } else {
         window.alert(`That's real. Being a plant-parent is a lot of responsibility. Come back when you're ready.`);
         return;
@@ -110,7 +115,6 @@ const begin = () => {
 }
 
 const playerChooses = (decision) => {
-    // const decision = window.prompt(`What would you like to do? Water, Shelter, Sun Lamp, Do Nothing, or Bail.`);
     if (decision.toLowerCase().trim() === 'water') {
         player.currentChoice = playerChoices[0];
         compare();
