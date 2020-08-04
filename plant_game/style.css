@@ -1,4 +1,4 @@
-/* @media screen (min-width: 100px) { */
+@media (min-width: 600px) {
 
     body {
         background-image: url(imgs/newbg.jpg);
@@ -12,6 +12,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        
     }
 
     h1 {
@@ -19,6 +20,7 @@
         text-align: center;
         color: white;
         font-size: 50px;
+        margin: 40px 0 10px 0;
     }
     
     #plant1 > img {
@@ -28,11 +30,19 @@
         /* margin: 0 0 0 363px; */
         border-radius: 20%;
         margin: auto;
+        margin-top: 0;
+        margin-bottom: -5px;
     }
 
     #begin {
         margin: 0 0 15px 0;
-        width: 200pxlol;
+        width: 200px;
+        font-family: 'Amatic SC', cursive;
+        background-color: #de8982;
+        font-size: 20px;
+        border-color: white;
+        color: white;
+        margin: 20px 0 40px 0;
     }
 
     #output-box {
@@ -42,16 +52,14 @@
         text-align: center;
         color: white;
         height: 125px;
-        width: 800px;
-        margin: 0 0 25px 0;
-        background-color: rgba(0, 255, 0, 0.3)
-        
-        
+        width: 700px;
+        background-color: rgba(0, 255, 0, 0.3);
+        box-shadow: 5px 6px darkgrey;
     }
 
     #choices {
         display: flex;
-        margin: 20px 50px 10px 50px;
+        margin: 0 50px 10px 50px;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -68,52 +76,76 @@
         width: 170px;
         height: auto;
         border-radius: 30%;
-        
+        box-shadow: 5px 6px darkgrey;
     }
 
-    /* #waterBtn {
-        margin-right: 20px;
-    } */
+    #waterBtn {
+        font-family: 'Amatic SC', cursive;
+        background-color: 	#6faefb;
+        font-size: 20px;
+        border-color: white;
+        color: white;
+    }
 
     #shelter > img {
         width: 170px;
         height: auto;
         border-radius: 20%;
+        box-shadow: 5px 6px darkgrey;
     }
 
-    /* #shelterBtn {
-        margin-right: 15px;
-    } */
+    #shelterBtn {
+        font-family: 'Amatic SC', cursive;
+        background-color: #544c4d;
+        font-size: 20px;
+        border-color: white;
+        color: white;
+    }
     
     #lamp > img {
         width: 170px;
         height: auto;
         border-radius: 20%;
+        box-shadow: 5px 6px darkgrey;
     }
 
-    /* #lampBtn {
-        margin-right: 15px;
-    } */
+    #lampBtn {
+        font-family: 'Amatic SC', cursive;
+        background-color: #de8982;
+        font-size: 20px;
+        border-color: white;
+        color: white;
+    }
 
     #doNothing > img {
         width: 170px;
         height: auto;
         border-radius: 20%;
+        box-shadow: 5px 6px darkgrey;
     }
 
-    /* #nothingBtn {
-        margin-left: 40px;
-    } */
+    #nothingBtn {
+        font-family: 'Amatic SC', cursive;
+        background-color: #547b4c;
+        font-size: 20px;
+        border-color: white;
+        color: white;
+    }
 
     #bail > img {
         width: 170px;
         height: auto;
         border-radius: 20%;
+        box-shadow: 5px 6px darkgrey;
     }
 
-    /* #bailBtn {
-        margin-left: 60px;
-    } */
+    #bailBtn {
+        font-family: 'Amatic SC', cursive;
+        background-color: #6c7e94;
+        font-size: 20px;
+        border-color: white;
+        color: white;
+    }
 
     #health-water {
         margin
@@ -121,43 +153,132 @@
 
     .healthwater {
         font-family: 'Amatic SC', cursive;
-        
+        color: white;
+        font-size: 25px;
     }
 
+}
 
+/* body {
+    background-image: url(imgs/newbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
 
-/* #main-box {
+#main-box {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 h1 {
+    font-family: 'Amatic SC', cursive;
     text-align: center;
+    color: white;
+    font-size: 50px;
 }
 
 #plant1 > img {
-    width: 50%;
-    height: 50%;
-    margin-left: 90px; 
+    display: flex;
+    width: 20%;
+    height: auto;
+    /* margin: 0 0 0 363px; */
+    border-radius: 20%;
+    margin: auto;
 }
 
 #begin {
-    margin: 10px 0 10px 0;;
+    margin: 0 0 15px 0;
+    width: 200px;
 }
 
-#output-box > img {
-    height: 100px;
-    width: 300px;
+#output-box {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+    color: white;
+    height: 125px;
+    width: 800px;
+    margin: 0 0 25px 0;
+    background-color: rgba(0, 255, 0, 0.3)
+    
+    
 }
 
 #choices {
     display: flex;
-    flex-direction: row;
+    margin: 20px 50px 10px 50px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#choices > img {
-    width: 10%;
-    height: auto;
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 15px 0 15px;
 }
- */
+
+#water > img {
+    width: 170px;
+    height: auto;
+    border-radius: 30%;
+    
+}
+
+/* #waterBtn {
+    margin-right: 20px;
+} */
+
+#shelter > img {
+    width: 170px;
+    height: auto;
+    border-radius: 20%;
+}
+
+/* #shelterBtn {
+    margin-right: 15px;
+} */
+
+#lamp > img {
+    width: 170px;
+    height: auto;
+    border-radius: 20%;
+}
+
+/* #lampBtn {
+    margin-right: 15px;
+} */
+
+#doNothing > img {
+    width: 170px;
+    height: auto;
+    border-radius: 20%;
+}
+
+/* #nothingBtn {
+    margin-left: 40px;
+} */
+
+#bail > img {
+    width: 170px;
+    height: auto;
+    border-radius: 20%;
+}
+
+/* #bailBtn {
+    margin-left: 60px;
+} */
+
+#health-water {
+    margin
+}
+
+.healthwater {
+    font-family: 'Amatic SC', cursive;
+    
+} */

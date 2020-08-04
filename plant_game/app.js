@@ -32,7 +32,7 @@ const water = {
 
 const healthWater = () => {
 
-    $('.healthwater').text(`Plant Health: ${plant.health} Water Level: ${water.level} Day: ${plant.day}`)
+    $('.healthwater').text(`Plant Health: ${plant.health}  ||  Water Level: ${water.level}  ||  Day: ${plant.day}`)
 
     }
 
@@ -105,13 +105,13 @@ const $p3w3 = () => {
 }
    
 const begin = () => {
-    const decision = window.prompt("Look at that handsome, new plant you just got. Ready to try and not kill it? Yes or No.")
-    if (decision.toLowerCase().trim() === 'yes') {
-        chooseBelow();
-    } else {
-        window.alert(`That's real. Being a plant-parent is a lot of responsibility. Come back when you're ready.`);
-        return;
-    }
+    $('.output').text("Look at that handsome, new plant you just got. Ready to try and not kill it? Choose how you want to get started below!");
+    // if (decision.toLowerCase().trim() === 'yes') {
+    //     chooseBelow();
+    // } else {
+    //     window.alert(`That's real. Being a plant-parent is a lot of responsibility. Come back when you're ready.`);
+    //     return;
+    // }
 }
 
 const playerChooses = (decision) => {
@@ -148,39 +148,39 @@ const compare = () => {
         water.level+=2;
         plant.day++;
         // showStatus();
-        healthWater();
+        
     } else if (player.currentChoice === playerChoices[1] && weather.currentChoice === weatherChoices[0]) {
         $p1w0();
         plant.health++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[2] && weather.currentChoice === weatherChoices[0]) {
         $p2w0();
         water.level++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[3] && weather.currentChoice === weatherChoices[0]) {
         $p3w0();
         plant.health++;
         water.level++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[0] && weather.currentChoice === weatherChoices[1]) {
         $p0w1();
         plant.health++;
         water.level++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[1] && weather.currentChoice === weatherChoices[1]) {
         $p1w1();
         plant.health--;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[2] && weather.currentChoice === weatherChoices[1]) {
         if (plant.health === 8 && water.level === 6) {
             dismalWin();
@@ -190,69 +190,71 @@ const compare = () => {
             water.level-=1;
             plant.day++;
             // showStatus();
-            healthWater();
+            // healthWater();
         }
     } else if (player.currentChoice === playerChoices[3] && weather.currentChoice === weatherChoices[1]) {
         $p3w1();
         plant.health++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[0] && weather.currentChoice === weatherChoices[2]) {
         $p1w2();
         plant.health--;
         water.level++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[1] && weather.currentChoice === weatherChoices[2]) {
         $p1w2();
         plant.health--;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[2] && weather.currentChoice === weatherChoices[2]) {
         $p2w2();
         plant.health++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[3] && weather.currentChoice === weatherChoices[2]) {
         $p3w2();
         plant.health--;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[0] && weather.currentChoice === weatherChoices[3]) {
         $p0w3();
         water.level++;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[1] && weather.currentChoice === weatherChoices[3]) {
         $p1w3();
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[2] && weather.currentChoice === weatherChoices[3]) {
         $p2w3();
         plant.health--;
         water.level--;
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     } else if (player.currentChoice === playerChoices[3] && weather.currentChoice === weatherChoices[3]) {
         $p3w3();
         plant.day++;
         // showStatus();
-        healthWater();
+        // healthWater();
     }
+    
     checkWin();
+    healthWater();
 }
 
-const showStatus = () => {
-    // window.alert(`Plant health is ${plant.health} and plant water level is ${water.level}.`)
-}
+// const showStatus = () => {
+//     window.alert(`Plant health is ${plant.health} and plant water level is ${water.level}.`)
+// }
 
 const checkWin = () => {
     if (plant.health === 10 && water.level === 7) {
@@ -261,12 +263,12 @@ const checkWin = () => {
             window.location.reload()
         }, 10000);
     } else if (plant.health >= 10 && water.level <= 9) {
-        window.alert(`You have what it takes to keep a plant happy and healthy! You win and your plant thanks you!`);
+        $('.output').text(`You have what it takes to keep a plant happy and healthy! You win and your plant thanks you!`);
         setTimeout(() => {
             window.location.reload()
         }, 10000);
     } else if (plant.health <= 0 || water.level <= 0 || water.level >= 10) {
-        window.alert(`You lack what it takes to even keep a plant alive. You lose and your plant is deader than dead. Way to go.`);
+        $('.output').text(`You lack what it takes to even keep a plant alive. You lose and your plant is deader than dead. Way to go.`);
         setTimeout(() => {
             window.location.reload()
         }, 10000);
@@ -279,7 +281,7 @@ const dismalWin = () => {
     window.alert(`Your Sun-Lamp on the sunny day generated too much heat and somehow transferred it to the sun; which then exploded the sun. As a result, everything on the planet is dead(including you), except for your plant. Your Sun-Lamp kept it alive. So, since the game is to keep the plant alive, I guess you win? Not ideal, but congratulations, or something...`);
     setTimeout(() => {
         window.location.reload()
-    }, 10000);
+    }, 5000);
 
     
 }
@@ -326,7 +328,5 @@ $ (() => {
     $bail.on('click', (event)=> {
         playerChooses($(event.currentTarget).text())
     })
-
-
 
 });
