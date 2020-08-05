@@ -1,10 +1,10 @@
-@media (min-width: 600px) {
+/* @media (min-width: 600px) { */
 
     body {
         background-image: url(imgs/newbg.jpg);
-        background-size: 100% 127%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
         
     }
 
@@ -49,6 +49,7 @@
         font-family: 'Amatic SC', cursive;
         font-size: 30px;
         font-style: bold;
+        text-align: start;
         text-align: center;
         color: white;
         height: 125px;
@@ -62,6 +63,7 @@
         margin: 0 50px 10px 50px;
         align-items: center;
         justify-content: space-evenly;
+        margin-bottom: 25px;
     }
 
 
@@ -69,7 +71,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin: 0 15px 0 15px;
+        margin: 0 15px 50px 15px;
     }
 
     #water > img {
@@ -157,128 +159,3 @@
         font-size: 25px;
     }
 
-}
-
-/* body {
-    background-image: url(imgs/newbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
-
-#main-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-h1 {
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
-    color: white;
-    font-size: 50px;
-}
-
-#plant1 > img {
-    display: flex;
-    width: 20%;
-    height: auto;
-    /* margin: 0 0 0 363px; */
-    border-radius: 20%;
-    margin: auto;
-}
-
-#begin {
-    margin: 0 0 15px 0;
-    width: 200px;
-}
-
-#output-box {
-    font-family: 'Amatic SC', cursive;
-    font-size: 30px;
-    font-style: bold;
-    text-align: center;
-    color: white;
-    height: 125px;
-    width: 800px;
-    margin: 0 0 25px 0;
-    background-color: rgba(0, 255, 0, 0.3)
-    
-    
-}
-
-#choices {
-    display: flex;
-    margin: 20px 50px 10px 50px;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-
-#buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 15px 0 15px;
-}
-
-#water > img {
-    width: 170px;
-    height: auto;
-    border-radius: 30%;
-    
-}
-
-/* #waterBtn {
-    margin-right: 20px;
-} */
-
-#shelter > img {
-    width: 170px;
-    height: auto;
-    border-radius: 20%;
-}
-
-/* #shelterBtn {
-    margin-right: 15px;
-} */
-
-#lamp > img {
-    width: 170px;
-    height: auto;
-    border-radius: 20%;
-}
-
-/* #lampBtn {
-    margin-right: 15px;
-} */
-
-#doNothing > img {
-    width: 170px;
-    height: auto;
-    border-radius: 20%;
-}
-
-/* #nothingBtn {
-    margin-left: 40px;
-} */
-
-#bail > img {
-    width: 170px;
-    height: auto;
-    border-radius: 20%;
-}
-
-/* #bailBtn {
-    margin-left: 60px;
-} */
-
-#health-water {
-    margin
-}
-
-.healthwater {
-    font-family: 'Amatic SC', cursive;
-    
-} */

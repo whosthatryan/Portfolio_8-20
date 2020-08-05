@@ -105,7 +105,7 @@ const $p3w3 = () => {
 }
    
 const begin = () => {
-    $('.output').text("Look at that handsome, new plant you just got. Ready to try and not kill it? Your plant will die if its health gets to 0 or if its water level gets to 0 or 10. Choose how you want to get started below!");
+    $('.output').text("Look at that handsome, new plant! Ready to try and not kill it? Your plant will die if its health gets to 0 or if its water level gets to 0 or 10. Choose how you want to get started below!");
     // if (decision.toLowerCase().trim() === 'yes') {
     //     chooseBelow();
     // } else {
@@ -199,7 +199,7 @@ const compare = () => {
         // showStatus();
         // healthWater();
     } else if (player.currentChoice === playerChoices[0] && weather.currentChoice === weatherChoices[2]) {
-        $p1w2();
+        $p0w2();
         plant.health--;
         water.level++;
         plant.day++;
